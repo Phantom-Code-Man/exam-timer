@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Exam Timer</h1>
+
+        <div class="timer-inputs">
+            <input type="text" id="timerTitle" placeholder="Timer Title">
+            <input type="number" id="readingTime" placeholder="Reading Time (min)">
+            <input type="number" id="examTime" placeholder="Exam Time (min)">
+            <button onclick="saveTimer()">Save Timer</button>
+        </div>
+
+        <h2>Saved Timers</h2>
+        <ul id="savedTimers"></ul>
+
+        <h2>Active Timers</h2>
+        <div id="activeTimers"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
